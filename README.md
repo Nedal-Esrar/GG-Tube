@@ -7,5 +7,5 @@
 <h3>Normalization</h3>
 <p>1NF, 2NF, and 3NF are Satisfied on all relations.</p>
 <h3>Implementation</h3>
-[Click Here!](DDl.sql)
+[Click Here!](./DDl.sql)
   
