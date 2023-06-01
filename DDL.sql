@@ -69,7 +69,7 @@ CREATE TABLE likes (
 CREATE TABLE subscribes (
 	subscriber_id INTEGER,
 	subscribed_to_id INTEGER,
-	subscription_date TIMESTAMP ( 0 ),
+	subscription_date TIMESTAMP ( 0 ) NOT NULL,
 	CONSTRAINT subscribes_pk PRIMARY KEY ( subscriber_id, subscribed_to_id ),
 	CONSTRAINT subscriber_channel_fk FOREIGN KEY ( subscriber_id ) REFERENCES channel ( channel_id ) ON DELETE CASCADE,
 	CONSTRAINT subscribed_to_channel_fk FOREIGN KEY ( subscribed_to_id ) REFERENCES channel ( channel_id ) ON DELETE CASCADE,
